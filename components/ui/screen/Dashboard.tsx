@@ -5,7 +5,7 @@ import { Text, StyleSheet, View } from 'react-native';
 export default function Dashboard() {
   return (
     <View style={styles.container}>
-      <Text style={styles.homeText}>Home Screen</Text>
+      <Text style={styles.homeText}>Dashboard</Text>
     </View>
   );
 }

@@ -1,3 +1,4 @@
+import Dashboard from '@/components/ui/screen/Dashboard';
 import SplashScreen from '@/components/ui/screen/SplashScreen ';
 import { useState } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
@@ -10,7 +11,7 @@ export default function HomeScreen() {
       {isLoading ? (
         <SplashScreen onFinish={() => setIsLoading(false)} />
       ) : (
-        <Text style={styles.text}>Home Screen</Text> 
+       <Dashboard/>
       )}
     </View>
   );
@@ -21,10 +22,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  text: {
-    fontSize: 20,
-    fontWeight: 'bold'
-   
-  },
+  }
+
 });

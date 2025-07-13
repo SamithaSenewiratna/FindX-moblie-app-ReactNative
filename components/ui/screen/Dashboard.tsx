@@ -2,7 +2,7 @@ import { COLORS } from '@/constants/Colors';
 import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 
-export default function HomeScreen() {
+export default function Dashboard() {
   return (
     <View style={styles.container}>
       <Text style={styles.homeText}>Home Screen</Text>

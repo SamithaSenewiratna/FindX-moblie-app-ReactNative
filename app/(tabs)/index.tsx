@@ -8,7 +8,7 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
-      {true ? (
+      {isLoading ? (
         <SplashScreen onFinish={() => setIsLoading(false)} />
       ) : (
        <Dashboard/>
